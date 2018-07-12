@@ -27,9 +27,10 @@ print("1st record category: {}\n".format(np_data[1][2]))
 
 np_goals = np_data[1:,6]
 np_pleged = np_data[1:,8]
+np_status = np_data[1:,9]
 import matplotlib.pyplot
 
-matplotlib.pyplot.hist(np_goals[0:7])
+matplotlib.pyplot.hist(np_status[:])
 matplotlib.pyplot.show()
 
 import pandas
@@ -39,7 +40,7 @@ print(pandas_data[:4])
 
 print(pandas_data.index)
 
-print(pandas_data.loc[:, 'goal'])
+print(pandas_data.loc[:, 'main_category'])
 
 
 '''
@@ -55,6 +56,24 @@ Easy
 Medium
 1. Are specific categories of kickstarters more successful than others?
     a. Define successful -- kickstarters definition, % goal pledged, etc.
+
+2. Is there a correlation between category and likelihood to succeed?f
+
+3. most popular kickstarters by country -- are they looking for funding by specific categories
+
+4. GoFundme -- ppl trying to raise money for healthcare
+
+5. Social connections -- kickstarters in America, are there more trends over specific categories like health care solutions
+    a. socially oriented category like healthcare and tie that to government spending for social programs
+
+6. sweet spot of asking for money
+    a. by category
+
+7. Success vs time
+
+8. Category popularity over time
+
+
 
 
 '''
