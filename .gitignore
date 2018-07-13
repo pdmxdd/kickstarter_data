@@ -1,3 +1,5 @@
 .idea/
 env_location.txt
 *.csv
+*.txt
+*.csv#
